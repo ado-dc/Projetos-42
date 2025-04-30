@@ -6,13 +6,13 @@ char	*ft_strdup(char *str)
 	char	*copy;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 		i++;
-	copy = (char *)malloc(sizeof(char) * (i + 1));
+	copy = malloc(sizeof(char) * (i + 1));
 	if (!copy)
 		return (NULL);
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		copy[i] = str[i];
 		i++;
@@ -20,4 +20,3 @@ char	*ft_strdup(char *str)
 	copy[i] = '\0';
 	return (copy);
 }
-
