@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ado-dc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/05 17:58:46 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/06 11:48:41 by ado-dc           ###   ########.fr       */
+/*   Created: 2025/05/06 10:27:17 by ado-dc            #+#    #+#             */
+/*   Updated: 2025/05/06 10:30:19 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < n && (s1[i] || s2[i]))
-	{
-		if ((unsigned char)s1[i] != (unsigned char)s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
-	}
-	return (0);
+	write(fd, s, ft_strlen(s));
 }

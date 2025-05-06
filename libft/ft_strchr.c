@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ado-dc <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/05 17:58:46 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/06 11:48:41 by ado-dc           ###   ########.fr       */
+/*   Created: 2025/05/06 09:30:43 by ado-dc            #+#    #+#             */
+/*   Updated: 2025/05/06 09:48:12 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (i < n && (s1[i] || s2[i]))
+	while (*s)
 	{
-		if ((unsigned char)s1[i] != (unsigned char)s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
+		if (*s == c)
+			return ((char *)s);
+		s++;
 	}
-	return (0);
+	if (c == '\0')
+		return ((char *)s);
+	return (NULL);
 }
