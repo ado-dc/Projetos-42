@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ado-dc <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: ado-dc <ado-dc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 09:41:09 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/12 16:13:15 by ado-dc           ###   ########.fr       */
+/*   Updated: 2025/05/13 23:55:11 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 void	*ft_calloc(size_t count, size_t size);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
