@@ -6,7 +6,7 @@
 /*   By: ado-dc <ado-dc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 09:41:09 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/14 13:38:37 by ado-dc           ###   ########.fr       */
+/*   Updated: 2025/05/15 15:31:09 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,5 +46,8 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+void	ft_putendl_fd(char *s, int fd);
+char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif
