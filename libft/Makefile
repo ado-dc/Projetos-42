@@ -23,5 +23,12 @@ fclean: clean
 	rm -rf $(NAME) $(TEST)
 
 re: fclean all
+bonus:
+	@echo "Sem funções bônus por enquanto."
+
+# Regra esperada por testers para criar uma lib compartilhada
+so:
+	$(CC) $(CFLAGS) -fPIC -c $(SRC)
+	$(CC) -shared -o libft.so *.o
 
 .PHONY: all clean fclean re

@@ -6,7 +6,7 @@
 /*   By: ado-dc <ado-dc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 13:24:31 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/15 15:01:27 by ado-dc           ###   ########.fr       */
+/*   Updated: 2025/05/16 13:15:28 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	**ft_split(char const *s, char c)
 	int		j;
 	int		k;
 
-	if (!s || c == '\0')
+	if (!s)
 		return (NULL);
 	result = (char **)malloc(sizeof(char *) * (ft_contpalavra(s, c) + 1));
 	if (!result)

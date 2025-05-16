@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ado-dc <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: ado-dc <ado-dc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/08 10:51:24 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/08 10:52:41 by ado-dc           ###   ########.fr       */
+/*   Updated: 2025/05/16 13:12:15 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	dst_len;
 	size_t	src_len;
 
+	if (!dst && dstsize == 0)
+		return (ft_strlen(src));
 	i = 0;
 	while (dst[i] && i < dstsize)
 		i++;

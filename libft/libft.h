@@ -6,7 +6,7 @@
 /*   By: ado-dc <ado-dc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 09:41:09 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/15 15:31:09 by ado-dc           ###   ########.fr       */
+/*   Updated: 2025/05/16 13:38:34 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stddef.h>
+# include <limits.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
