@@ -6,7 +6,7 @@
 /*   By: ado-dc <ado-dc@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 09:41:09 by ado-dc            #+#    #+#             */
-/*   Updated: 2025/05/20 10:12:58 by ado-dc           ###   ########.fr       */
+/*   Updated: 2025/05/20 11:32:17 by ado-dc           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 void	ft_putendl_fd(char *s, int fd);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 #endif
